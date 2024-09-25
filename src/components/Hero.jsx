@@ -1,51 +1,9 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Typical from "react-typical";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
-  const name = "Srichand Suresh";
-  const [displayedText, setDisplayedText] = useState("");
-  const typingSpeed = 50; // Typing speed in milliseconds
-  const deletingSpeed = 100; // Deleting speed in milliseconds
-  const pauseBetweenLoops = 800; // Pause after typing
-
-  useEffect(() => {
-    let typingTimeout;
-    let deletingTimeout;
-
-    const typeText = () => {
-      for (let i = 0; i <= name.length; i++) {
-        typingTimeout = setTimeout(() => {
-          setDisplayedText(name.substring(0, i));
-        }, typingSpeed * i);
-      }
-
-      typingTimeout = setTimeout(() => {
-        deleteText();
-      }, typingSpeed * name.length + pauseBetweenLoops);
-    };
-
-    const deleteText = () => {
-      for (let i = name.length; i >= 0; i--) {
-        deletingTimeout = setTimeout(() => {
-          setDisplayedText(name.substring(0, i));
-        }, deletingSpeed * (name.length - i));
-      }
-
-      deletingTimeout = setTimeout(() => {
-        typeText();
-      }, deletingSpeed * (name.length + 1) + pauseBetweenLoops);
-    };
-
-    typeText();
-
-    return () => {
-      clearTimeout(typingTimeout);
-      clearTimeout(deletingTimeout);
-    };
-  }, []);
-
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -57,16 +15,12 @@ const Hero = () => {
         </div>
 
         <div>
-        <h1 className={`${styles.heroHeadText} text-white`}>
-  <span className="text-4xl">Hi, I'm</span>{" "} {/* Adjust font size here */}
-  <span className={`${styles.heroHeadText}`} style={{ color: '#a82323' }}>
-    {displayedText}
-  </span>
-</h1>
-
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm <span className={`${styles.heroHeadText} `} style={{ color: '#a82323' }}>Srichand Suresh</span>
+          </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Exploring data science and <br className='sm:block hidden' />
-            automating lives
+          Exploring data science and <br className='sm:block hidden' />
+          automating lives.
           </p>
         </div>
       </div>
