@@ -66,7 +66,7 @@ const Hero = () => {
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Exploring data science and <br className='sm:block hidden' />
-            automating lives.
+            automating lives
           </p>
         </div>
       </div>
