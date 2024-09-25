@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation"; // New import
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
@@ -18,10 +18,16 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm{" "}
             <span className={`${styles.heroHeadText}`} style={{ color: '#a82323' }}>
-              <Typical
-                steps={["Srichand Suresh", 2000]} // Typing effect for your name
-                loop={1}
+              <TypeAnimation
+                sequence={[
+                  "Srichand Suresh", // Your name
+                  2000,               // Delay in ms
+                  "",                 // Optional: Clear name
+                  2000,               // Delay before retyping
+                ]}
                 wrapper="span"
+                cursor={true}
+                repeat={Infinity} // Loop the animation
               />
             </span>
           </h1>
