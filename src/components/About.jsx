@@ -45,13 +45,16 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am a data science enthusiast pursuing a B.Tech at Government Engineering College Thrissur.
+        With a focus on machine learning, web development, and app development,
+        I transform complex datasets into actionable insights. 
+        I enjoy creating user-friendly applications and websites that incorporate predictive models,
+         bridging the gap between data science and practical solutions. Committed to continuous learning,
+          I thrive on solving real-world challenges through data-driven approaches.
+
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
