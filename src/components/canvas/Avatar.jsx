@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react'
-import { useFrame, useGraph } from '@react-three/fiber'
-import { useGLTF, useFBX, useAnimations } from '@react-three/drei'
-import { SkeletonUtils } from 'three-stdlib'
-import * as THREE from 'three'; // Import THREE
+import React, { useEffect, useRef, Suspense } from 'react';
+import { useFrame, useGraph } from '@react-three/fiber';
+import { useGLTF, useFBX, useAnimations } from '@react-three/drei';
+import { SkeletonUtils } from 'three-stdlib';
+import * as THREE from 'three';
+import CanvasLoader from '../Loader'; // Import your CanvasLoader component
 
 export function Avatar(props) {
   const group = useRef();
@@ -10,20 +11,27 @@ export function Avatar(props) {
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
 
-  // Ensure wavingAnimation is loaded correctly
   const { animations: wavingAnimation } = useFBX('/avatar/animations/Waving.fbx');
   wavingAnimation[0].name = "Waving";
   const { actions } = useAnimations(wavingAnimation, group);
 
   useEffect(() => {
-    actions["Waving"].reset().play();  // Ensure the animation exists before playing
+    actions["Waving"].reset().play();
   }, [actions]);
-  
+
+  const clippingPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 1);
+
+  useEffect(() => {
+    Object.values(materials).forEach(material => {
+      if (material instanceof THREE.MeshStandardMaterial) {
+        material.clippingPlanes = [clippingPlane];
+      }
+    });
+  }, [materials]);
 
   useFrame((state) => {
-
-      const target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
-      group.current.getObjectByName("Head").lookAt(target);
+    const target = new THREE.Vector3(state.mouse.x, state.mouse.y-0.2, 1);
+    group.current.getObjectByName("Head").lookAt(target);
   });
 
   return (
@@ -32,7 +40,7 @@ export function Avatar(props) {
       {...props}
       dispose={null}
       scale={[4, 4, 4]}
-      rotation={[Math.PI / 2, Math.PI, Math.PI]} 
+      rotation={[Math.PI / 2, Math.PI, Math.PI]}
       position={[-0.2, -7.4, 0]}
     >
       <primitive object={nodes.Hips} />
@@ -45,4 +53,4 @@ export function Avatar(props) {
   );
 }
 
-useGLTF.preload('models/model.glb');
+useGLTF.preload('/avatar/models/model.glb');

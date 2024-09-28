@@ -202,130 +202,150 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "A.L.O.H.A",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "ALOHA is an AI driven personal assistant designed to help users manage their tasks, events, and categories. Leveraging Natural Language Processing (NLP) and Machine Learning (ML), ALOHA can understand user commands and perform various functions such as adding, deleting, and listing tasks or creating categories.",
       tags: [
         {
-          name: "react",
+          name: "ML",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "NLTK",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Flutter",
           color: "pink-text-gradient",
+        },
+        {
+          name: "Flask",
+          color: "yellow-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Apollo-Blaze/A.L.O.H.A",
     },
     {
-      name: "Job IT",
+      name: "FloodGuard",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "FloodGuard is a predictive modeling project aimed at assessing the risk of flooding in Kerala based on current rainfall conditions. Utilizing machine learning and data analysis techniques, this project leverages historical weather data to forecast potential flooding events, providing valuable insights for disaster management and response efforts.",
       tags: [
         {
-          name: "react",
+          name: "Tensorflow",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "React",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Docker",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Flask",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/Apollo-Blaze/FloodGuard",
+    },
+    {
+      name: "LearnSpectra",
+      description:
+        "LearnSpectra is an educational web application that helps teachers and educators analyze educational materials. Users can upload PDF files containing chapters, submit questions related to the content, and receive AI-generated insights. The application provides suggestions for relevant topics and assignments.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Gemini",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Express",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/Apollo-Blaze/LearnSpectra",
+    },
+    {
+      name: "Reddit Topic Modeling",
+      description:
+        "This project uses Python to perform topic modeling on Reddit comments. It leverages libraries like praw for accessing Reddit data, nltk for text preprocessing, and sklearn for topic modeling using Latent Dirichlet Allocation (LDA).",
+      tags: [
+        {
+          name: "Tensorflow",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "PRAW",
+          color: "green-text-gradient",
+        },
+        {
+          name: "NLTK",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Apollo-Blaze/Reddit_Topic_Modeling",
     },
     {
-      name: "Job IT",
+      name: "Eko",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "EKO is an innovative platform designed to bridge the gap between the general public and repair technicians by facilitating the sale of unusable electronic and electrical components. This project aims to make repairs more affordable and accessible .",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Express",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Gemini",
           color: "pink-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "yellow-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Apollo-Blaze/Ekov1",
     },
     {
       name: "Trip Guide",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A simple Flutter app to add and delete quotes, which served as my beginner project to gain hands-on experience in Flutter. The user interface and design elements are well-curated, making the app both functional and visually appealing.",
       tags: [
         {
-          name: "nextjs",
+          name: "Flutter",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Shared_Preferences",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "UI",
           color: "pink-text-gradient",
+        },
+        {
+          name: "UX",
+          color: "yellow-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Apollo-Blaze/Quotify-flutter-app-",
     },
   ];
   
