@@ -141,7 +141,7 @@ import {
       iconBg: "#383E56",
       date: "October 2022 - Present",
       points: [
-        "Completed an internship with the Thrissur Corporation, working on a project related to digital literacy",
+        "Completed an internship with the Thrissur Corporation, working on a project related to digital literacy.",
         "Secured 3rd place in the GEC Kannur Hackathon with the team Nobel Dev's.",
         "Achieved 2nd place in the Christ College Irinjalakuda competition alongside the team.",
         "Won 2nd place in the College of Engineering Vadakara competition as part of Nobel Dev's.",
@@ -154,9 +154,10 @@ import {
       iconBg: "#E6DEDD",
       date: "May 2017 - May 2021",
       points: [
-        "Ranked 3rd in my 10th-grade class",
-        "Achieved 96% in 12th grade with a focus on bioscience.",
-        "Explored Java during this time",
+        "Secured 97.8% in my 10th-grade.",
+        "Achieved 96% in 12th grade with a focus on Bio-Science.",
+        "Explored Java during this time.",
+        "Explored Kerala and life in Thrissur.",
       ],
     },
     {
@@ -167,8 +168,8 @@ import {
       date: "March 2008 - April 2017",
       points: [
         "I consistently ranked as the top student in most of my classes.",
-        "Secured first place in a zonal-level robotics competition in Saudi Arabia ",
-        "Developed a strong interest in programming ",
+        "Secured first place in a zonal-level robotics competition in Saudi Arabia. ",
+        "Developed a strong interest in programming. ",
       ],
     },
   ];
