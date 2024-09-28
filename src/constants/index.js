@@ -324,7 +324,7 @@ import {
       source_code_link: "https://github.com/Apollo-Blaze/Ekov1",
     },
     {
-      name: "Trip Guide",
+      name: "Quotify",
       description:
         "A simple Flutter app to add and delete quotes, which served as my beginner project to gain hands-on experience in Flutter. The user interface and design elements are well-curated, making the app both functional and visually appealing.",
       tags: [
