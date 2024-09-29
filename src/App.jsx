@@ -10,19 +10,26 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <Suspense fallback={<div>Loading stars...</div>}>
-          <StarsCanvas />
+        
           <div className='relative z-0'>
+          <Suspense fallback={<div>Loading stars...</div>}>
+          <StarsCanvas />
             <About />
+            </ Suspense >
           </div>
           <Experience />
           <div className='relative z-0'>
+          <Suspense fallback={<div>Loading stars...</div>}>
+          <StarsCanvas />
             <Works />
+            </ Suspense >
           </div>
           <div className='relative z-0'>
+          <Suspense fallback={<div>Loading stars...</div>}>
+          <StarsCanvas />
             <Contact />
+            </ Suspense >
           </div>
-        </Suspense>
       </div>
     </BrowserRouter>
   );
