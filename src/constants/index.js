@@ -21,8 +21,14 @@ import {
     shopify,
     carrent,
     jobit,
+    FloodGuard,
     tripguide,
     threejs,
+    LearnSpectra,
+    reddit,
+    eko,
+    aloha,
+    quotify
   } from "../assets";
   
   export const navLinks = [
@@ -224,7 +230,7 @@ import {
           color: "yellow-text-gradient",
         },
       ],
-      image: carrent,
+      image: aloha,
       source_code_link: "https://github.com/Apollo-Blaze/A.L.O.H.A",
     },
     {
@@ -249,7 +255,7 @@ import {
           color: "yellow-text-gradient",
         },
       ],
-      image: jobit,
+      image: FloodGuard,
       source_code_link: "https://github.com/Apollo-Blaze/FloodGuard",
     },
     {
@@ -274,7 +280,7 @@ import {
           color: "yellow-text-gradient",
         },
       ],
-      image: jobit,
+      image: LearnSpectra,
       source_code_link: "https://github.com/Apollo-Blaze/LearnSpectra",
     },
     {
@@ -295,7 +301,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: reddit,
       source_code_link: "https://github.com/Apollo-Blaze/Reddit_Topic_Modeling",
     },
     {
@@ -320,7 +326,7 @@ import {
           color: "yellow-text-gradient",
         },
       ],
-      image: jobit,
+      image: eko,
       source_code_link: "https://github.com/Apollo-Blaze/Ekov1",
     },
     {
@@ -345,7 +351,7 @@ import {
           color: "yellow-text-gradient",
         },
       ],
-      image: tripguide,
+      image: quotify,
       source_code_link: "https://github.com/Apollo-Blaze/Quotify-flutter-app-",
     },
   ];
