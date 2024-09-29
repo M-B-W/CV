@@ -1,4 +1,8 @@
 import {
+    yasmin,
+    gec,
+    nmcs,
+    ds,
     mobile,
     backend,
     creator,
@@ -15,14 +19,7 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
     FloodGuard,
-    tripguide,
     threejs,
     LearnSpectra,
     reddit,
@@ -130,7 +127,7 @@ import {
     {
       title: "Exploring Data Science",
       company_name: "Self Paced Learning",
-      icon: tesla,
+      icon: ds,
       iconBg: "#E6DEDD",
       date: "July 2024 - Present",
       points: [
@@ -143,7 +140,7 @@ import {
     {
       title: "College",
       company_name: "Government Engineering College Thrissur",
-      icon: shopify,
+      icon: gec,
       iconBg: "#383E56",
       date: "October 2022 - Present",
       points: [
@@ -156,7 +153,7 @@ import {
     {
       title: "High School",
       company_name: "Nirmala Matha Central School",
-      icon: meta,
+      icon: nmcs,
       iconBg: "#E6DEDD",
       date: "May 2017 - May 2021",
       points: [
@@ -169,7 +166,7 @@ import {
     {
       title: "Schooling",
       company_name: "Al-Yasmin International School",
-      icon: starbucks,
+      icon: yasmin,
       iconBg: "#383E56",
       date: "March 2008 - April 2017",
       points: [

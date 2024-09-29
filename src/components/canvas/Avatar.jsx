@@ -16,8 +16,10 @@ export function Avatar(props) {
   const { actions } = useAnimations(wavingAnimation, group);
 
   useEffect(() => {
-    actions["Waving"].reset().play();
-  }, [actions]);
+    if (actions["Waving"]) {
+      actions["Waving"].reset().play();
+    }
+  }, [actions, wavingAnimation]);
 
   const clippingPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 1);
 
@@ -30,7 +32,7 @@ export function Avatar(props) {
   }, [materials]);
 
   useFrame((state) => {
-    const target = new THREE.Vector3(state.mouse.x, state.mouse.y-0.2, 1);
+    const target = new THREE.Vector3(state.mouse.x, state.mouse.y - 0.2, 1);
     group.current.getObjectByName("Head").lookAt(target);
   });
 

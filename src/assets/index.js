@@ -21,14 +21,11 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import LearnSpectra from "./LearnSpectra.png"
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import nmcs from "./company/nmcs.png";
+import ds from "./company/ds.png";
+import yasmin from "./company/yasmin.png";
+import gec from "./company/fec.png";
 import reddit from "./reddit.png"
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import eko from './eko.png'
 import aloha from './aloha.png'
 import quotify from './quotify.png'
@@ -55,17 +52,14 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
   FloodGuard,
-  tripguide,
   LearnSpectra,
   reddit,
   eko,
   aloha,
-  quotify
+  quotify,
+  ds,
+  nmcs,
+  gec,
+  yasmin,
 };

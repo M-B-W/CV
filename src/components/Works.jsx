@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, memo } from "react";
 import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
 
@@ -8,7 +8,8 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
+// Memoize ProjectCard to prevent unnecessary re-renders
+const ProjectCard = memo(({
   index,
   name,
   description,
@@ -16,58 +17,118 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if the screen width is less than 768px (mobile)
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-      >
-        <div className='relative w-full h-[230px]'>
-          <img
-            loading="lazy"
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
+      {/* Disable Tilt on mobile */}
+      {isMobile ? (
+        <div className='bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]'>
+          <div className='relative w-full h-[230px]'>
+            <img
+              loading="lazy"
+              src={image}
+              alt='project_image'
+              className='w-full h-full object-cover rounded-2xl'
+            />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-              
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-        </div>
+          <div className='mt-5'>
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
+          <div className='mt-4 flex flex-wrap gap-2'>
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
-      </Tilt>
+      ) : (
+        <Tilt
+          options={{
+            max: 25,  // Reduce intensity to lighten the effect
+            scale: 1,
+            speed: 300,  // Reduce speed for better performance
+          }}
+          className='bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]'
+        >
+          <div className='relative w-full h-[230px]'>
+            <img
+              loading="lazy"
+              src={image}
+              alt='project_image'
+              className='w-full h-full object-cover rounded-2xl'
+            />
+
+            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className='mt-5'>
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          </div>
+
+          <div className='mt-4 flex flex-wrap gap-2'>
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </Tilt>
+      )}
     </motion.div>
   );
-};
+});
 
 const Works = () => {
   return (
