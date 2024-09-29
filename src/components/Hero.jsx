@@ -3,9 +3,9 @@ import { styles } from "../styles";
 import { Avatar } from "./canvas/Avatar";
 import { Canvas } from "@react-three/fiber";
 import * as THREE from 'three'; 
-import CanvasLoader from "./Loader"; // Import CanvasLoader
+import CanvasLoader from "./Loader";
 import React, { Suspense } from "react";
-
+import { Typewriter } from 'react-simple-typewriter'; // Import Typewriter
 
 const Hero = () => {
   const clippingPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 1);
@@ -18,8 +18,18 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 white-gradient' />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className={`${styles.heroHeadText}`} style={{ color: '#a82323' }}>Srichand Suresh</span>
+          <h1 className={`${styles.heroHeadText} text-white `}>
+            Hi, I'm <span className={`${styles.heroHeadText}`} style={{ color: '#a82323' }}>
+              <Typewriter
+                words={['Srichand Suresh']}
+                loop={false}          // no loop, just type it once
+                cursor
+                cursorStyle='|'
+                typeSpeed={80}        // typing speed
+                deleteSpeed={50}       // speed when deleting (if needed)
+                delaySpeed={4000}      // delay before typing starts
+              />
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Exploring data, automating the ordinary, <br className='sm:block hidden' />
@@ -27,12 +37,14 @@ const Hero = () => {
           </p>
         </div>
       </div>
+
       <Canvas camera={{ position: [0, 1, 5], fov: 50 }}>
-        <Suspense fallback={<CanvasLoader />}> {/* Use Suspense to show the loader */}
+        <Suspense fallback={<CanvasLoader />}>
           <ambientLight intensity={1} />
           <Avatar clippingPlanes={[clippingPlane]} />
         </Suspense>
       </Canvas>
+
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>

@@ -23,16 +23,6 @@ export function Avatar(props) {
     }
   }, [actions, wavingAnimation]);
 
-  const clippingPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 1);
-
-  useEffect(() => {
-    Object.values(materials).forEach(material => {
-      if (material instanceof THREE.MeshStandardMaterial) {
-        material.clippingPlanes = [clippingPlane];
-      }
-    });
-  }, [materials]);
-
   useFrame((state) => {
     const target = new THREE.Vector3(state.pointer.x, state.pointer.y - 0.4, 1);
     group.current.getObjectByName("Head").lookAt(target);
