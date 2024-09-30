@@ -18,6 +18,7 @@ const ProjectCard = memo(({
   source_code_link,
 }) => {
   const [isMobile, setIsMobile] = useState(false);
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   useEffect(() => {
     // Check if the screen width is less than 768px (mobile)
@@ -34,6 +35,12 @@ const ProjectCard = memo(({
     // Cleanup on unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // Configure animation settings based on mobile and reduced motion preferences
+  const animationConfig = {
+    max: prefersReducedMotion || isMobile ? 10 : 25, // Less intense tilt on mobile or reduced motion
+    speed: prefersReducedMotion || isMobile ? 500 : 300, // Slower tilt for mobile or reduced motion
+  };
 
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -81,9 +88,9 @@ const ProjectCard = memo(({
       ) : (
         <Tilt
           options={{
-            max: 25,  // Reduce intensity to lighten the effect
+            max: animationConfig.max,
             scale: 1,
-            speed: 300,  // Reduce speed for better performance
+            speed: animationConfig.speed,
           }}
           className='bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]'
         >

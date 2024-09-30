@@ -40,7 +40,7 @@ const Hero = () => {
 
       <Canvas camera={{ position: [0, 1, 5], fov: 50 }}>
         <Suspense fallback={<CanvasLoader />}>
-          <ambientLight intensity={1} />
+          <ambientLight intensity={3.5} />
           <Avatar clippingPlanes={[clippingPlane]} />
         </Suspense>
       </Canvas>
