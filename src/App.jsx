@@ -25,6 +25,7 @@ const App = () => {
             <Works />
             </ Suspense >
           </div>
+          <Feedbacks />
           <div className='relative z-0'>
           <Suspense fallback={<div>Loading stars...</div>}>
           <StarsCanvas />

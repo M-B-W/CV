@@ -32,8 +32,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Exploring data, automating the ordinary, <br className='sm:block hidden' />
-            creating the extraordinary.
+          A developer diving into Data Science and ML,<br className='sm:block hidden' />
+          hoping the machines don’t get too smart!!
           </p>
         </div>
       </div>

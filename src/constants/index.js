@@ -145,9 +145,9 @@ import {
       date: "October 2022 - Present",
       points: [
         "Completed an internship with the Thrissur Corporation, working on a project related to digital literacy.",
-        "Secured 3rd place in the GEC Kannur Hackathon with the team Nobel Dev's.",
-        "Achieved 2nd place in the Christ College Irinjalakuda competition alongside the team.",
-        "Won 2nd place in the College of Engineering Vadakara competition as part of Nobel Dev's.",
+        "Secured 3rd place in the GEC Kannur hackathon with the team Nobel Dev's.",
+        "Achieved 2nd place in the Christ College Irinjalakuda hackathon alongside the team.",
+        "Won 2nd place in the College of Engineering Vadakara hackathon as part of Nobel Dev's.",
       ],
     },
     {
@@ -180,27 +180,35 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "My first foray into the world of hackathons was an eye-opening experience. I learned how to collaborate effectively within a team, connect with professionals far more experienced than myself, and navigate the dynamic environment of a competitive event. Our team conceptualized Contentator, an innovative solution designed to filter racial slurs and violent language from text. Though the journey was exhausting, with a particularly persistent bug challenging us through the night, perseverance paid off. I stayed up the entire night troubleshooting and, in the end, found the solution. Our efforts culminated in securing 3rd place—an accomplishment that sparked my passion for these events.",
+      name: "Hackathon @ GEC Kannur",
+      designation: "9th Dec, 2023",
+      company: "",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "The Eko project, which focuses on recycling and reusing unusable phone components, took shape during this hackathon. Being closer to home, travel was more convenient, and I was able to reconnect with a few friends as we embarked on the event. The atmosphere was lively, with a festival and music happening nearby, adding a unique flavor to the experience. Set outdoors, the event provided a sense of connection to nature, enhancing the overall vibe. Our team introduced fresh, innovative features for Eko, making it an even more promising solution. The result? A well-deserved 2nd place finish.",
+      name: "Hackathon @ Christ College",
+      designation: "28th Feb, 2024",
+      company: "Acme Co",
+      image: "https://randomuser.me/api/portraits/women/2.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "We continued developing Eko at this event, though we faced an unexpected challenge: one of our team members joined a different team, leaving us a person short. Nevertheless, we pushed forward, refining both the design and practicality of the product. Despite the setback, the hackathon was incredibly enjoyable, especially spending the night alongside a close friend and classmates from different teams. This camaraderie made the experience unforgettable, and once again, we clinched 2nd place.",
+      name: "Hackathon @ College of Engineering Vadakara",
+      designation: "17th Apr, 2024",
+      company: "Acme Co",
+      image: "https://randomuser.me/api/portraits/women/1.jpg",
+    },
+    {
+      testimonial:
+        "I decided to enroll in a Data Science course on Udemy after realizing that web development didn't fully resonate with me. It turned out to be one of the best decisions I've ever made. From the very first day, I discovered a deep passion for the subject. The combination of mathematics, coding, and logic felt like the perfect fit for me. The course was a two-week journey that introduced me to the exciting fields of Machine Learning (ML) and Deep Learning (DL), further fueling my interest. I was particularly drawn to the practical applications of the concepts I learned. By the end of the course, I had gained a great deal of self-confidence, and my curiosity for further learning was reignited.",
+      name: "Discovering My Passion for Data Science",
+      designation: "15th Jul, 2024",
+      company: "Acme Co",
+      image: "https://randomuser.me/api/portraits/women/1.jpg",
     },
   ];
   

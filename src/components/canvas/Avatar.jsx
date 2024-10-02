@@ -24,7 +24,7 @@ export function Avatar(props) {
   }, [actions, wavingAnimation]);
 
   useFrame((state) => {
-    const target = new THREE.Vector3(state.pointer.x, state.pointer.y - 0.4, 1);
+    const target = new THREE.Vector3(state.pointer.x, state.pointer.y - 0.5, 1);
 
     group.current.getObjectByName("Head").lookAt(target);
   });
