@@ -19,6 +19,7 @@ const App = () => {
             </ Suspense >
           </div>
           <Experience />
+          <Tech />
           <div className='relative z-0'>
           <Suspense fallback={<div>Loading stars...</div>}>
           <StarsCanvas />

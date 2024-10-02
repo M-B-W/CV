@@ -25,7 +25,27 @@ import {
     reddit,
     eko,
     aloha,
-    quotify
+    quotify,
+    python,
+    pytorch,
+    c,
+    cplus,
+    dart,
+    express,
+    firebase,
+    flask,
+    keras,
+    flutter,
+    java,
+    matplotlib,
+    mysql,
+    numpy,
+    pandas,
+    r,
+    scikitlearn,
+    sqlite,
+    tf,
+    ps
   } from "../assets";
   
   export const navLinks = [
@@ -34,12 +54,12 @@ import {
       title: "",
     },
     {
-      id: "about",
-      title: "About",
-    },
-    {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "tech",
+      title: "Stack",
     },
     {
       id: "projects",
@@ -72,14 +92,6 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
       name: "JavaScript",
       icon: javascript,
     },
@@ -92,16 +104,12 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Express",
+      icon: express,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
+      name: "Flutter",
+      icon: flutter,
     },
     {
       name: "MongoDB",
@@ -112,18 +120,69 @@ import {
       icon: threejs,
     },
     {
-      name: "git",
-      icon: git,
+      name: "C",
+      icon: c,
     },
+    {
+      name: "C++",
+      icon: cplus,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },     
+    {
+      name: "Pytorch",
+      icon: pytorch,
+    }, 
+    {
+      name: "Flask",
+      icon: flask,
+    }, 
+    {
+      name: "Tensorflow",
+      icon: tf,
+    },  
+    {
+      name: "Scikitlearn",
+      icon: scikitlearn,
+    }, 
+    {
+      name: "Keras",
+      icon: keras,
+    }, 
+    {
+      name: "Matplotlib",
+      icon: matplotlib,
+    }, 
+    {
+      name: "Pandas",
+      icon: pandas,
+    }, 
+    {
+      name: "Numpy",
+      icon: numpy,
+    }, 
+    {
+      name: "Firebase",
+      icon: firebase,
+    }, 
+    {
+      name: "R",
+      icon: r,
+    }, 
+    {
+      name: "SQLite",
+      icon: sqlite,
+    }, 
+    {
+      name: "Photoshop",
+      icon: ps,
+    }, 
     {
       name: "figma",
       icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-    
+    }, 
   ];
   
   const experiences = [

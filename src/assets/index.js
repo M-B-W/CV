@@ -29,8 +29,48 @@ import reddit from "./reddit.png"
 import eko from './eko.png'
 import aloha from './aloha.png'
 import quotify from './quotify.png'
+import ps from './tech/Adobe Photoshop.png'
+import c from './tech/C.png'
+import cplus from './tech/C++ (CPlusPlus).png'
+import dart from './tech/Dart.png'
+import express from './tech/Express.png'
+import firebase from './tech/Firebase.png'
+import flask from './tech/Flask.png'
+import flutter from './tech/Flutter.png'
+import java from './tech/Java.png'
+import keras from './tech/Keras.png'
+import matplotlib from './tech/Matplotlib.png'
+import mysql from './tech/MySQL.png'
+import numpy from './tech/NumPy.png'
+import pandas from './tech/Pandas.png'
+import python from './tech/Python.png'
+import pytorch from './tech/PyTorch.png'
+import r from './tech/R.png'
+import scikitlearn from './tech/scikit-learn.png'
+import sqlite from './tech/SQLite.png'
+import tf from './tech/TensorFlow.png'
 
 export {
+  tf,
+  sqlite,
+  r,
+  scikitlearn,
+  python,
+  pytorch,
+  pandas,
+  numpy,
+  matplotlib,
+  mysql,
+  keras,
+  java,
+  flutter,
+  flask,
+  firebase,
+  express,
+  dart,
+  cplus,
+  c,
+  ps,
   logo,
   backend,
   creator,
