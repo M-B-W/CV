@@ -48,7 +48,7 @@ const Navbar = () => {
     };
 
     const observer = new IntersectionObserver(handleSectionInView, {
-      threshold: 1, // Adjust threshold as necessary
+      threshold: 0.8, // Adjust threshold as necessary
     });
 
     // Observe each section

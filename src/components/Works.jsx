@@ -17,17 +17,14 @@ const ProjectCard = memo(({
   image,
   source_code_link,
 }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   useEffect(() => {
-    // Check if the screen width is less than 768px (mobile)
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
+      console.log(`Is Mobile: ${window.innerWidth < 768}`); // Debugging log
     };
-
-    // Initial check
-    handleResize();
 
     // Add event listener for window resize
     window.addEventListener("resize", handleResize);
@@ -36,17 +33,16 @@ const ProjectCard = memo(({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Configure animation settings based on mobile and reduced motion preferences
   const animationConfig = {
-    max: prefersReducedMotion || isMobile ? 10 : 25, // Less intense tilt on mobile or reduced motion
-    speed: prefersReducedMotion || isMobile ? 500 : 300, // Slower tilt for mobile or reduced motion
+    max: prefersReducedMotion || isMobile ? 10 : 25,
+    speed: prefersReducedMotion || isMobile ? 500 : 300,
   };
 
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       {/* Disable Tilt on mobile */}
       {isMobile ? (
-        <div className='bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]'>
+        <div className='bg-tertiary p-5 rounded-2xl w-60'>
           <div className='relative w-full h-[230px]'>
             <img
               loading="lazy"
@@ -54,7 +50,6 @@ const ProjectCard = memo(({
               alt='project_image'
               className='w-full h-full object-cover rounded-2xl'
             />
-
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
@@ -68,12 +63,10 @@ const ProjectCard = memo(({
               </div>
             </div>
           </div>
-
           <div className='mt-5'>
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             <p className='mt-2 text-secondary text-[14px]'>{description}</p>
           </div>
-
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
               <p
@@ -101,7 +94,6 @@ const ProjectCard = memo(({
               alt='project_image'
               className='w-full h-full object-cover rounded-2xl'
             />
-
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
@@ -115,12 +107,10 @@ const ProjectCard = memo(({
               </div>
             </div>
           </div>
-
           <div className='mt-5'>
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             <p className='mt-2 text-secondary text-[14px]'>{description}</p>
           </div>
-
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
               <p
@@ -137,11 +127,12 @@ const ProjectCard = memo(({
   );
 });
 
+// The Works component remains unchanged
 const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -150,11 +141,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
         </motion.p>
       </div>
 

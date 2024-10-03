@@ -303,5 +303,16 @@
   opacity: 1; /* Keep the active dot fully visible */
 }
 
+.custom-cursor {
+  position: fixed;
+  width: 20px; /* Set the size of the cursor */
+  height: 20px; /* Set the size of the cursor */
+  border-radius: 50%; /* Make it circular */
+  background-color: white; /* Cursor color */
+  pointer-events: none; /* Prevent mouse events on the cursor */
+  transform: translate(-50%, -50%); /* Center the cursor */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+  z-index: 9999; /* Make sure it stays above other elements */
+}
 
 
