@@ -44,6 +44,8 @@ const Feedbacks = () => {
     speed: 500,
     slidesToShow: 1, // Always show one card per page
     slidesToScroll: 1, // Scroll one card at a time
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 15000,
     responsive: [
       {
         breakpoint: 1200, // Large tablets or small desktops

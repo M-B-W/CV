@@ -271,6 +271,9 @@
   .slick-next {
     right: -5px; /* Adjust the right position */
   }
+  .slick-prev {
+    left: -5px; /* Adjust the left position */
+  }
 }
 
 /* Adjust padding and margins for smaller screens */
@@ -287,7 +290,7 @@
     right: -15px; /* Adjust the right position */
   }
   .slick-prev {
-    left: -15px; /* Adjust the right position */
+    left: -15px; /* Adjust the left position */
   }
 }
 
