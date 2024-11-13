@@ -5,7 +5,7 @@ import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState("home"); // Default to "home"
+  const [active, setActive] = useState("home");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [navbarColor, setNavbarColor] = useState("bg-transparent");
@@ -18,7 +18,7 @@ const Navbar = () => {
         setScrolled(true);
       } else {
         setScrolled(false);
-        setActive("home"); // Set "home" as active when scrolled to top
+        setActive("home");
       }
     };
 
@@ -34,24 +34,23 @@ const Navbar = () => {
   // Handle observing sections to set active link based on scrolling
   useEffect(() => {
     const handleSectionInView = (entries) => {
-      let homeActive = true; // Default to home being active
+      let homeActive = true;
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setActive(entry.target.id); // Set active section based on id
-          homeActive = false; // If any section is in view, home is not active
+          setActive(entry.target.id);
+          homeActive = false;
         }
       });
 
       if (homeActive) {
-        setActive("home"); // Reset to home if no other sections are intersecting
+        setActive("home");
       }
     };
 
     const observer = new IntersectionObserver(handleSectionInView, {
-      threshold: 0.8, // Adjust threshold as necessary
+      threshold: 0.8,
     });
 
-    // Observe each section
     navLinks.forEach((nav) => {
       const section = document.getElementById(nav.id);
       if (section) {
@@ -59,7 +58,6 @@ const Navbar = () => {
       }
     });
 
-    // Cleanup observer on unmount
     return () => {
       navLinks.forEach((nav) => {
         const section = document.getElementById(nav.id);
@@ -72,7 +70,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 transition-colors duration-300 ${navbarColor}`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 left-0 z-20 transition-colors duration-300 ${navbarColor}`}
+      style={{
+        position: "fixed", // Ensure it's fixed at the top
+        top: 0,            // No offset
+        left: 0,           // Align to the left edge of the screen
+        right: 0,          // Ensure full width
+        width: "100%",      // Full width of the screen
+        zIndex: 1000,      // Ensure it stays above other content
+      }}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -96,9 +102,9 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === "home"
-                  ? "text-secondary" // If "home" is active, all links are text-secondary
+                  ? "text-secondary"
                   : active === nav.id
-                  ? "text-white" // Highlight the active section link
+                  ? "text-white"
                   : "text-secondary"
               } hover:text-white text-[18px] font-bold cursor-pointer transition-colors duration-300`}
               onClick={() => setActive(nav.id)}
@@ -119,12 +125,12 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } p-6 bg-primary absolute top-16 right-0 mx-0 my-2 w-full z-10 rounded-b-3xl shadow-lg transition-all duration-300 ease-in-out transform ${
-              toggle ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0"
-            }`}
+            } p-6 bg-primary absolute top-16 right-0 mx-0 my-2 w-full z-10 rounded-b-3xl shadow-lg transition-opacity duration-300 ease-in-out`}
           >
             <ul className="list-none flex justify-center items-center flex-1 flex-col gap-4 w-full">
-              {navLinks.map((nav) => (
+              {navLinks
+                .filter((nav) => nav.id !== "projects")
+                .map((nav) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${

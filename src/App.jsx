@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import React, { Suspense } from 'react';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import Footer from './components/Footer';
 
 const App = () => {
@@ -13,29 +13,35 @@ const App = () => {
           <Hero />
         </div>
         
-          <div className='relative z-0'>
+        <div className='relative z-0'>
           <Suspense fallback={<div>Loading stars...</div>}>
-          <StarsCanvas />
+            <StarsCanvas />
             <About />
-            </ Suspense >
-          </div>
-          <Experience />
-          <Tech />
-          <div className='relative z-0'>
+          </Suspense>
+        </div>
+
+        <Experience />
+        <Tech />
+
+        {/* Hide Works section on mobile screens */}
+        <div className='relative z-0 hidden md:block'>
           <Suspense fallback={<div>Loading stars...</div>}>
-          <StarsCanvas />
+            <StarsCanvas />
             <Works />
-            </ Suspense >
-          </div>
-          <Feedbacks />
-          <div className='relative z-0'>
+          </Suspense>
+        </div>
+
+        <Feedbacks />
+
+        <div className='relative z-0'>
           <Suspense fallback={<div>Loading stars...</div>}>
-          <StarsCanvas />
+            <StarsCanvas />
             <Contact />
-            </ Suspense >
-          </div>
+          </Suspense>
+        </div>
       </div>
-      <Analytics/>
+      
+      <Analytics />
       <Footer />
     </BrowserRouter>
   );
