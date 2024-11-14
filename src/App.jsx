@@ -23,8 +23,7 @@ const App = () => {
         <Experience />
         <Tech />
 
-        {/* Hide Works section on mobile screens */}
-        <div className='relative z-0 hidden md:block'>
+        <div className='relative z-0 '>
           <Suspense fallback={<div>Loading stars...</div>}>
             <StarsCanvas />
             <Works />
