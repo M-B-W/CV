@@ -114,26 +114,24 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="sm:hidden flex flex-1 justify-end items-center transition-opacity duration-300 ease-in-out">
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className="w-[28px] h-[28px] object-contain cursor-pointer transition-opacity duration-300 ease-in-out"
             onClick={() => setToggle(!toggle)}
           />
 
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } p-6 bg-primary absolute top-16 right-0 mx-0 my-2 w-full z-10 rounded-b-3xl shadow-lg transition-opacity duration-300 ease-in-out`}
+            } p-6 bg-primary absolute top-12 right-0 mx-0 my-2 w-full z-10 shadow-lg transition-opacity duration-300 ease-in-out`}
           >
-            <ul className="list-none flex justify-center items-center flex-1 flex-col gap-4 w-full">
-              {navLinks
-                .filter((nav) => nav.id !== "projects")
-                .map((nav) => (
+            <ul className="list-none flex justify-center items-center flex-1 flex-col gap-4 w-full transition-opacity duration-300 ease-in-out">
+              {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={`transition-opacity duration-300 ease-in-out font-poppins font-medium cursor-pointer text-[20px] ${
                     active === "home"
                       ? "text-secondary"
                       : active === nav.id
