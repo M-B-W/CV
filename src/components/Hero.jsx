@@ -4,11 +4,28 @@ import { Avatar } from "./canvas/Avatar";
 import { Canvas } from "@react-three/fiber";
 import * as THREE from 'three'; 
 import CanvasLoader from "./Loader";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Typewriter } from 'react-simple-typewriter'; // Import Typewriter
 
 const Hero = () => {
   const clippingPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 1);
+  
+  // Calculate age based on birthdate
+  const birthDate = new Date('2004-03-01'); // Replace with your birthdate in 'YYYY-MM-DD' format
+  const [age, setAge] = useState(0);
+
+  const calculateAge = () => {
+    const currentDate = new Date();
+    const ageInMilliseconds = currentDate - birthDate;
+    const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25); // Convert milliseconds to years
+    setAge(ageInYears.toFixed(10)); // Set the age to the 10th decimal place
+  };
+
+  useEffect(() => {
+    // Update the age every second to keep it real-time
+    const interval = setInterval(calculateAge, 1);
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+  }, []);
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -31,9 +48,13 @@ const Hero = () => {
               />
             </span>
           </h1>
+          {/* Age display with 'Age' in red */}
+          <p className={`${styles.heroSubText}mt-2 text-[#a82326] font-extrabold`}>
+            <span className={`${styles.heroSubText} text-white-100 font-semibold `}>Age:</span> {age} 
+          </p>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          A developer diving into Data Science and ML,<br className='sm:block hidden' />
-          hoping the machines don’t get too smart!!
+            A developer diving into Data Science and ML,<br className='sm:block hidden' />
+            hoping the machines don’t get too smart!!
           </p>
         </div>
       </div>
