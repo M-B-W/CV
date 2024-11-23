@@ -35,21 +35,12 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 white-gradient' />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white `}>
-            Hi, I'm <span className={`${styles.heroHeadText}`} style={{ color: '#a82323' }}>
-              <Typewriter
-                words={['Srichand Suresh']}
-                loop={false}          // no loop, just type it once
-                cursor
-                cursorStyle='|'
-                typeSpeed={80}        // typing speed
-                deleteSpeed={50}       // speed when deleting (if needed)
-                delaySpeed={4000}      // delay before typing starts
-              />
-            </span>
-          </h1>
-          {/* Age display with 'Age' in red */}
-          <p className={`${styles.heroSubText}mt-2 text-[#a82326] font-extrabold`}>
+        <h1 className={`${styles.heroHeadText} text-white `}>
+          Hi, I'm <span className={`${styles.heroHeadText}`} style={{ color: '#a82323' }}>
+            Srichand Suresh
+          </span>
+        </h1>
+          <p className={`${styles.heroSubText} mt-2 text-[#9d2323] font-semibold`}>
             <span className={`${styles.heroSubText} text-white-100 font-semibold `}>Age:</span> {age} 
           </p>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
