@@ -5,7 +5,6 @@ import { Canvas } from "@react-three/fiber";
 import * as THREE from 'three'; 
 import CanvasLoader from "./Loader";
 import React, { Suspense, useEffect, useState } from "react";
-import { Typewriter } from 'react-simple-typewriter'; // Import Typewriter
 
 const Hero = () => {
   const clippingPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 1);
@@ -40,7 +39,7 @@ const Hero = () => {
             Srichand Suresh
           </span>
         </h1>
-          <p className={`${styles.heroSubText} mt-2 text-[#9d2323] font-semibold`}>
+          <p className={`${styles.heroSubText} mt-2 text-red-800 font-semibold`}>
             <span className={`${styles.heroSubText} text-white-100 font-semibold `}>Age:</span> {age} 
           </p>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
