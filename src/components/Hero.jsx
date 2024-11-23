@@ -39,7 +39,7 @@ const Hero = () => {
             Srichand Suresh
           </span>
         </h1>
-          <p className={`${styles.heroSubText} mt-2 text-red-800 font-semibold`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 font-semibold`}>
             <span className={`${styles.heroSubText} text-white-100 font-semibold `}>Age:</span> {age} 
           </p>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
