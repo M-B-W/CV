@@ -36,7 +36,7 @@ const ProjectCard = memo(({
     >
       <Tilt
         options={isMobile ? { max: 0, scale: 1, speed: 300 } : { max: animationConfig.max, scale: 1, speed: animationConfig.speed }}
-        className='bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]'
+        className='bg-[#180f36] p-5 rounded-2xl w-full sm:w-[360px]'
       >
         <div className='relative w-full h-[230px]'>
           <img

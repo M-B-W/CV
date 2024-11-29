@@ -35,12 +35,12 @@ const Hero = () => {
         </div>
         <div>
         <h1 className={`${styles.heroHeadText} text-white `}>
-          Hi, I'm <span className={`${styles.heroHeadText}`} style={{ color: '#a82323' }}>
+          Hi, I'm <span className={`${styles.heroHeadText}`} style={{ color: '#b91c1c' }}>
             Srichand Suresh
           </span>
         </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 font-semibold`}>
-            <span className={`${styles.heroSubText} text-white-100 font-semibold `}>Age:</span> {age} 
+            <span className={`${styles.heroSubText} text-red-700 font-semibold `}>Age:</span> {age} 
           </p>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             A developer diving into Data Science and ML,<br className='sm:block hidden' />

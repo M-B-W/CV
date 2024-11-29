@@ -19,15 +19,26 @@ const App = () => {
             <About />
           </Suspense>
         </div>
-
+        
         <Experience />
-        <Tech />
 
-        <div className='relative z-0 '>
-          <Suspense fallback={<div>Loading stars...</div>}>
-            <StarsCanvas />
-            <Works />
-          </Suspense>
+
+        <div className='relative z-0 flex flex-col min-h-screen bg-gradient-to-b from-primary to-[#0f0429]'>
+  {/* Yellow section for Tech component, centered */}
+  <div className='z-20 flex-1 flex justify-center items-center'>
+    <div className="p-2 sm:p-4">
+      <Tech />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+        <div className='relative z-0 bg-gradient-to-b  from-[#0f0429] to-primary'>
+        <Works />
         </div>
 
         <Feedbacks />
