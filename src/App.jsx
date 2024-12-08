@@ -22,10 +22,10 @@ const App = () => {
         
         <Experience />
 
-
-        <div className='relative z-0 flex flex-col min-h-screen bg-gradient-to-b from-primary to-[#0f0429]'>
-  {/* Yellow section for Tech component, centered */}
-  <div className='z-20 flex-1 flex justify-center items-center'>
+        <div className="relative z-0 flex flex-col min-h-screen">
+  <div className="absolute top-0 left-0 w-full h-1/2 "></div>
+  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-[#0b134f2a]"></div>
+  <div className="z-20 flex-1 flex justify-center items-center">
     <div className="p-2 sm:p-4">
       <Tech />
     </div>
@@ -37,7 +37,7 @@ const App = () => {
 
 
 
-        <div className='relative z-0 bg-gradient-to-b  from-[#0f0429] to-primary'>
+        <div className='relative z-0 bg-[#0b134f2a]'>
         <Works />
         </div>
 

@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import FloodGuard from "./FloodGuard.png"
+import ettayi from "./ettayi.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -20,12 +20,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import LearnSpectra from "./LearnSpectra.png"
+import nap from "./nap.png"
 import nmcs from "./company/nmcs.png";
 import ds from "./company/ds.png";
 import yasmin from "./company/yasmin.png";
 import gec from "./company/fec.png";
-import reddit from "./reddit.png"
+import study from "./study.jpg"
 import eko from './eko.png'
 import aloha from './aloha.png'
 import quotify from './quotify.png'
@@ -49,8 +49,10 @@ import r from './tech/R.png'
 import scikitlearn from './tech/scikit-learn.png'
 import sqlite from './tech/SQLite.png'
 import tf from './tech/TensorFlow.png'
+import opencv from './tech/opencv.png'
 
 export {
+  opencv,
   tf,
   sqlite,
   r,
@@ -92,9 +94,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  FloodGuard,
-  LearnSpectra,
-  reddit,
+  ettayi,
+  nap,
   eko,
   aloha,
   quotify,
@@ -102,4 +103,5 @@ export {
   nmcs,
   gec,
   yasmin,
+  study,
 };

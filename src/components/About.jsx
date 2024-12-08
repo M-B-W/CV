@@ -55,12 +55,13 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          I am a data science enthusiast pursuing a B.Tech at Government Engineering College Thrissur.
-          With a focus on machine learning, web development, and app development,
-          I transform complex datasets into actionable insights. 
-          I enjoy creating user-friendly applications and websites that incorporate predictive models,
-          bridging the gap between data science and practical solutions. Committed to continuous learning,
-          I thrive on solving real-world challenges through data-driven approaches.
+          Hi, I'm <span className="text-white-100">Srichand Suresh</span>, a developer with a <span className="text-white-100">curious mind </span> and <span className="text-white-100">a philosophical soul. </span>
+          I'm fascinated by how things work. Whether it's code, the way people interact with technology, 
+          or the deeper questions about <span className="text-white-100">life and its meaning</span>. I tend to overthink life's simplest questions 
+          and often find myself debating abstract ideas with <span className="text-white-100">no right answers</span>.
+          When I'm not lost in thought, you'll probably find me tinkering with side projects,
+          exploring new tools, or adding <span className="text-white-100">"just one more feature"</span> to something that was perfectly fine (until it wasn't).
+          Whether it's technology or philosophy, I'm always looking to explore what makes the world tick and find ways to make it a little better.
         </motion.p>
 
         <motion.button 

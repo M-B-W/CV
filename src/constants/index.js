@@ -19,10 +19,9 @@ import {
     git,
     figma,
     docker,
-    FloodGuard,
+    ettayi,
     threejs,
-    LearnSpectra,
-    reddit,
+    nap,
     eko,
     aloha,
     quotify,
@@ -45,7 +44,9 @@ import {
     scikitlearn,
     sqlite,
     tf,
-    ps
+    ps,
+    opencv,
+    study
   } from "../assets";
   
   export const navLinks = [
@@ -96,10 +97,6 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
@@ -116,25 +113,13 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "C",
       icon: c,
     },
     {
-      name: "C++",
-      icon: cplus,
-    },
-    {
       name: "Python",
       icon: python,
-    },     
-    {
-      name: "Pytorch",
-      icon: pytorch,
-    }, 
+    },   
     {
       name: "Flask",
       icon: flask,
@@ -164,16 +149,12 @@ import {
       icon: numpy,
     }, 
     {
+      name: "OpenCV",
+      icon: opencv,
+    }, 
+    {
       name: "Firebase",
       icon: firebase,
-    }, 
-    {
-      name: "R",
-      icon: r,
-    }, 
-    {
-      name: "SQLite",
-      icon: sqlite,
     }, 
     {
       name: "Photoshop",
@@ -302,75 +283,75 @@ import {
       source_code_link: "https://github.com/Apollo-Blaze/A.L.O.H.A",
     },
     {
-      name: "FloodGuard",
+      name: "Ettayi Lang",
       description:
-        "FloodGuard is a predictive modeling project aimed at assessing the risk of flooding in Kerala based on current rainfall conditions. Utilizing machine learning and data analysis techniques, this project leverages historical weather data to forecast potential flooding events, providing valuable insights for disaster management and response efforts.",
+        "Tired of always coding in English? Why not switch things up with Malayalam! Ettayi is a programming language that lets you write code in Manglish, a fun mix of Malayalam and English. It's a simple way to make coding exciting, especially if you want to connect with your roots. Working on Ettayi taught me a lot about parsers and interpreters.",
       tags: [
         {
-          name: "Tensorflow",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "React",
+          name: "Lark",
           color: "green-text-gradient",
         },
         {
-          name: "Docker",
+          name: "Parser",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: ettayi,
+      source_code_link: "https://github.com/Apollo-Blaze/ettayi",
+    },
+    {
+      name: "Nap Buster",
+      description:
+        "Nap-Buster is the ultimate wake-up call for your computer! Nap-Buster keeps your laptop alert and active by making sure it knows when you're around by using face detection. Whether you're reading, watching, or just too lazy to move, Nap-Buster ensures your laptop stays awake, just like you! Stay focussed with Nap-Buster!!",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "OpenCV",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Media-Pipe",
           color: "pink-text-gradient",
         },
         {
-          name: "Flask",
+          name: "OS",
           color: "yellow-text-gradient",
         },
       ],
-      image: FloodGuard,
-      source_code_link: "https://github.com/Apollo-Blaze/FloodGuard",
+      image: nap,
+      source_code_link: "https://github.com/Apollo-Blaze/Nap-Buster",
     },
     {
-      name: "LearnSpectra",
+      name: "Ravenswood Case",
       description:
-        "LearnSpectra is an educational web application that helps teachers and educators analyze educational materials. Users can upload PDF files containing chapters, submit questions related to the content, and receive AI-generated insights. The application provides suggestions for relevant topics and assignments.",
+        "This project is designed to engage users in a thrilling murder mystery investigation. Users explore locations, interact with AI-powered suspects, and ultimately solve the mystery by determining the killer. This projected is hosted and free to play.",
       tags: [
         {
           name: "React",
           color: "blue-text-gradient",
-        },
-        {
-          name: "Gemini",
-          color: "green-text-gradient",
         },
         {
           name: "Express",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Firebase",
-          color: "yellow-text-gradient",
-        },
-      ],
-      image: LearnSpectra,
-      source_code_link: "https://github.com/Apollo-Blaze/LearnSpectra",
-    },
-    {
-      name: "Reddit Topic Modeling",
-      description:
-        "This project uses Python to perform topic modeling on Reddit comments. It leverages libraries like praw for accessing Reddit data, nltk for text preprocessing, and sklearn for topic modeling using Latent Dirichlet Allocation (LDA).",
-      tags: [
-        {
-          name: "Tensorflow",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "PRAW",
           color: "green-text-gradient",
         },
         {
-          name: "NLTK",
+          name: "Gemini",
           color: "pink-text-gradient",
         },
+        {
+          name: "UI",
+          color: "yellow-text-gradient",
+        },
       ],
-      image: reddit,
-      source_code_link: "https://github.com/Apollo-Blaze/Reddit_Topic_Modeling",
+      image: study,
+      source_code_link: "https://github.com/Apollo-Blaze/Murder-Mystery/",
     },
     {
       name: "Eko",
@@ -398,29 +379,29 @@ import {
       source_code_link: "https://github.com/Apollo-Blaze/Ekov1",
     },
     {
-      name: "Quotify",
+      name: "Orion",
       description:
-        "A simple Flutter app to add and delete quotes, which served as my beginner project to gain hands-on experience in Flutter. The user interface and design elements are well-curated, making the app both functional and visually appealing.",
+        "Orion is a collaboration app designed to streamline project management. With integrated resources, group chats, automated meeting minutes, to-do lists, and push notifications, Orion makes project coordination more efficient and fun.",
       tags: [
         {
           name: "Flutter",
           color: "blue-text-gradient",
         },
         {
-          name: "Shared_Preferences",
+          name: "BERT",
           color: "green-text-gradient",
         },
         {
-          name: "UI",
+          name: "Firebase",
           color: "pink-text-gradient",
         },
         {
-          name: "UX",
+          name: "UI",
           color: "yellow-text-gradient",
         },
       ],
       image: quotify,
-      source_code_link: "https://github.com/Apollo-Blaze/Quotify-flutter-app-",
+      source_code_link: "https://github.com/Apollo-Blaze/Orion",
     },
   ];
   
