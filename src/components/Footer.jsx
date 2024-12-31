@@ -12,14 +12,14 @@ const Footer = () => {
         animate="show"
         className="flex flex-col items-center p-5"
       >
-        <p className={` ${styles.sectionSubText} pb-8 font-black`}>Connect with me thru</p>
+        <p className={` ${styles.sectionSubText} pb-8 font-black`}>Connect with me </p>
         <div className="flex flex-col items-center gap-3">
-          <span className='text-red-700'> Email: <a href="mailto:srichandsureshrocks@gmail.com" className="text-white hover:text-red-700">srichandsureshrocks@gmail.com</a></span>
-          <span className='text-red-700'> Github: <a href="https://github.com/Apollo-Blaze" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-700">Apollo-Blaze</a></span>
-          <span className='text-red-700'> LinkedIn: <a href="https://www.linkedin.com/in/srichand-suresh-67b7b3279/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-700">Srichand Suresh</a></span>
-          <span className='text-red-700'> Instagram: <a href="https://www.instagram.com/sri__xnd.__/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-700">sri__xnd.__</a></span>
-          <span className='text-red-700'> 
-            Phone: <a href="tel:+919539513333" className="text-white hover:text-red-700">+91-9539513333</a>
+          <span className='text-blue-500'> Email: <a href="mailto:bharathwajprofessional04@gmail.com" className="text-white hover:text-red-500">bharathwajprofessional04@gmail.com</a></span>
+          <span className='text-blue-500'> Github: <a href="https://github.com/M-B-W" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-500">M-B-W</a></span>
+          <span className='text-blue-500'> LinkedIn: <a href="www.linkedin.com/in/bharathwaj-darkangel0011" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-500">Bharathwaj M</a></span>
+          <span className='text-blue-500'> Instagram: <a href="https://www.instagram.com/_bharath_waj_04/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-500">_bharath_waj_04</a></span>
+          <span className='text-blue-500'> 
+            Phone: <a href="tel:+916385790363" className="text-white hover:text-red-500">+91-6385790363</a>
           </span>
         </div>
       </motion.div>

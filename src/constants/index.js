@@ -46,7 +46,21 @@ import {
     tf,
     ps,
     opencv,
-    study
+    study,
+    ros,
+    arduino,
+    plc,
+    robodk,
+    motosim,
+    fusion,
+    sw,
+    as,
+    vite,
+    matlab,
+    thinkercad,
+    autocad,
+    blender,
+    emailjs
   } from "../assets";
   
   export const navLinks = [
@@ -74,7 +88,7 @@ import {
   
   const services = [
     {
-      title: "Data Scientist",
+      title: "ROS",
       icon: web,
     },
     {
@@ -82,7 +96,7 @@ import {
       icon: mobile,
     },
     {
-      title: "App Developer",
+      title: "Hardware Developer",
       icon: backend,
     },
     {
@@ -93,53 +107,60 @@ import {
   
   const technologies = [
     {
+      name: "Html",
+      icon: html,
+    },
+    {
+      name: "Css",
+      icon: css,
+    },
+    {
       name: "JavaScript",
       icon: javascript,
     },
+    
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Express",
-      icon: express,
-    },
+      name: "Vite",
+      icon: vite,
+    }, 
     {
-      name: "Flutter",
-      icon: flutter,
-    },
+      name: "Tailwind",
+      icon: tailwind,
+    }, 
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Nodejs",
+      icon: nodejs,
     },
     {
       name: "C",
       icon: c,
+    },
+
+    {
+      name: "C++",
+      icon: cplus,
     },
     {
       name: "Python",
       icon: python,
     },   
     {
-      name: "Flask",
-      icon: flask,
+      name: "Mysql",
+      icon: mysql,
+    },
+    {
+      name: "Git",
+      icon: git,
     }, 
     {
       name: "Tensorflow",
       icon: tf,
     },  
-    {
-      name: "Scikitlearn",
-      icon: scikitlearn,
-    }, 
-    {
-      name: "Keras",
-      icon: keras,
-    }, 
-    {
-      name: "Matplotlib",
-      icon: matplotlib,
-    }, 
+     
     {
       name: "Pandas",
       icon: pandas,
@@ -157,66 +178,130 @@ import {
       icon: firebase,
     }, 
     {
+      name: "emailjs",
+      icon: emailjs,
+    },
+    {
       name: "Photoshop",
       icon: ps,
     }, 
     {
-      name: "figma",
-      icon: figma,
+      name: "ROS",
+      icon: ros,
+    },
+
+    {
+      name: "Arduino",
+      icon: arduino,
     }, 
+    {
+      name: "PLC",
+      icon: plc,
+    }, 
+    {
+      name: "RoboDK",
+      icon: robodk,
+    }, 
+    {
+      name: "MotoSim",
+      icon: motosim,
+    }, 
+    {
+      name: "AutoCAD",
+      icon: autocad,
+    }, 
+    {
+      name: "Fusion",
+      icon: fusion,
+    }, 
+    {
+      name: "Solidwork",
+      icon: sw,
+    }, 
+    {
+      name: "Automation Stuido",
+      icon: as,
+    }, 
+    {
+      name: "MatLab",
+      icon: matlab,
+    },
+    {
+      name: "ThinkerCAD",
+      icon: thinkercad,
+    },
+    {
+      name: "Blender",
+      icon: blender,
+    },
+    
+    
+    
+    
+    
+    
   ];
   
   const experiences = [
     
     {
-      title: "Exploring Data Science",
-      company_name: "Self Paced Learning",
+      title: "Self-growth",
+      company_name: "Independent Learning",
       icon: ds,
       iconBg: "#E6DEDD",
-      date: "July 2024 - Present",
+      date: "Jan 2023 - Present",
       points: [
-        "Completed the 'Data Science for Engineers' course from NPTEL, focusing on data science applications in R, taught by professors from IIT Madras.",
-        "Finished the Udemy 'Python for Data Science and Machine Learning Bootcamp' by Jose Portilla, covering key concepts in data analysis, machine learning, and visualization.",
-        "Developed ALOHA, a chatbot project using TensorFlow and NLTK for managing tasks with natural language processing and machine learning techniques.",
-        "Worked on Flood Guard, a machine learning project predicting potential flood disasters in Kerala based on rainfall patterns and environmental data.",
-      ],
+        "Completed a 6-month certification course in C, C++, and Java at AlTech Center.",
+        "Completed a 2-month certificate course in Python Programming (Basics to Advanced) at Computer Software College (CSC).",
+        "Finished the Infosys Springboard program in Data Science for Python,more..",
+        "Participated in various workshops including Git, ArdiBot, and more.",
+        "Learned ROS-2 (Robot Operating System) from basics to advanced.",
+        "Gained proficiency in mechanical component design software such as Fusion 360 and SolidWorks.",
+        "Acquired hands-on experience with controllers like Arduino, Raspberry Pi, and Jetson.",
+        "Gained a foundational understanding of PLC programming.",
+        "Fully learned Frontend Development technologies including HTML, CSS, JavaScript, and frameworks like React.js, Tailwind, Node.js, Next.js, and Vite.",
+       ],
     },
     {
       title: "College",
-      company_name: "Government Engineering College Thrissur",
+      company_name: "Sri Ramakrishna Engineering College (SREC)",
       icon: gec,
       iconBg: "#383E56",
-      date: "October 2022 - Present",
+      date: "November 2022 - Present",
       points: [
-        "Completed an internship with the Thrissur Corporation, working on a project related to digital literacy.",
-        "Secured 3rd place in the GEC Kannur hackathon with the team Nobel Dev's.",
-        "Achieved 2nd place in the Christ College Irinjalakuda hackathon alongside the team.",
-        "Won 2nd place in the College of Engineering Vadakara hackathon as part of Nobel Dev's.",
+        "Completed three internships.",
+        "1.Codecluse Company (Remote Web Developer Intern): Created a weather app and eChat app, gaining hands-on experience in web development.",
+        "2.CodTech IT Solution Company (Remote Web Developer Intern): Acquired in-depth knowledge of React.js, API integration, and modern web development practices.",
+        "3.TheDust Robotics Company (Offline Intern): Learned about the Robot Operating System (ROS), LIDAR configuration, and hardware connections.",
+        "Won the Best Poster Presentation Award in my second-year post-presentation competition, presented by the Principal.",
+        "In my third year, my team built a line-following robot and participated in the Maze and Line Follower Robotics Competition at Kongu Engineering College, securing 1st and 2nd place.",
       ],
     },
     {
       title: "High School",
-      company_name: "Nirmala Matha Central School",
+      company_name: "SBOA Matric & Hr.Sec.School",
       icon: nmcs,
       iconBg: "#E6DEDD",
-      date: "May 2017 - May 2021",
+      date: "May 2020 - May 2022",
       points: [
-        "Secured 97.8% in my 10th-grade.",
-        "Achieved 96% in 12th grade with a focus on Bio-Science.",
-        "Explored Java during this time.",
-        "Explored Kerala and life in Thrissur.",
+        "Achieved 78% in 12th grade with a focus on Computer-Science.",
+        "Explored C++, Python during this time.",
+        "I participated in the Capture the Flag (CTF) competition at the national level in Kerala, competing against 1,000 participants and securing a spot in the top 72.",
+        "I developed an app for my school using the MIT App Inventor interface.",
+        "Inspired by Jarvis, I created my own AI using Python, showcasing my innovative approach and passion for technology.",
+        
       ],
     },
     {
       title: "Schooling",
-      company_name: "Al-Yasmin International School",
+      company_name: "St.Jonhs Matric Hr. Sec School",
       icon: yasmin,
       iconBg: "#383E56",
-      date: "March 2008 - April 2017",
+      date: "April 2007 - March 2020",
       points: [
-        "I consistently ranked as the top student in most of my classes.",
-        "Secured first place in a zonal-level robotics competition in Saudi Arabia. ",
-        "Developed a strong interest in programming. ",
+        "During my school days, I consistently performed as an above-average student.",
+        "I won first place in the Camlin Drawing Competition for two consecutive years.",
+        "I developed a strong passion for programming, which has significantly shaped my personal and professional growth. ",
       ],
     },
   ];
@@ -224,184 +309,181 @@ import {
   const testimonials = [
     {
       testimonial:
-        "My first foray into the world of hackathons was an eye-opening experience. I learned how to collaborate effectively within a team, connect with professionals far more experienced than myself, and navigate the dynamic environment of a competitive event. Our team conceptualized Contentator, an innovative solution designed to filter racial slurs and violent language from text. Though the journey was exhausting, with a particularly persistent bug challenging us through the night, perseverance paid off. I stayed up the entire night troubleshooting and, in the end, found the solution. Our efforts culminated in securing 3rd place—an accomplishment that sparked my passion for these events.",
-      name: "Hackathon @ GEC Kannur",
-      designation: "9th Dec, 2023",
-      company: "",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Weather Application Development: Developed a responsive weather application using HTML, CSS, and JavaScript, integrated with a third-party weather API. This app presents real-time weather data in an intuitive interface, enhancing user experience with dynamic updates.   E-Commerce Application: Built a user-friendly e-cart application with React.js, incorporating features such as dynamic product listings, cart management, and state handling. This application offers a seamless shopping experience, improving functionality and user engagement in e-commerce.",
+      name: "CodeClause",
+      designation: "1st Feb, 2024 - 1st Mar, 2024",
+      
+      
     },
     {
       testimonial:
-        "The Eko project, which focuses on recycling and reusing unusable phone components, took shape during this hackathon. Being closer to home, travel was more convenient, and I was able to reconnect with a few friends as we embarked on the event. The atmosphere was lively, with a festival and music happening nearby, adding a unique flavor to the experience. Set outdoors, the event provided a sense of connection to nature, enhancing the overall vibe. Our team introduced fresh, innovative features for Eko, making it an even more promising solution. The result? A well-deserved 2nd place finish.",
-      name: "Hackathon @ Christ College",
-      designation: "28th Feb, 2024",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/2.jpg",
+        "Developed 'Rocky Weather', a weather application website using HTML, CSS, JavaScript, and third-party APIs to provide accurate and real-time weather information. In addition, worked as a LinkedIn Promotion Specialist, enhancing brand visibility, boosting engagement, and driving targeted traffic through strategic content creation and networking campaigns.",
+      name: "CODTECH IT SOLUTIONS",
+      designation: "1st Apr, 2024 - 1st May, 2024",
+      
+      
     },
     {
       testimonial:
-        "We continued developing Eko at this event, though we faced an unexpected challenge: one of our team members joined a different team, leaving us a person short. Nevertheless, we pushed forward, refining both the design and practicality of the product. Despite the setback, the hackathon was incredibly enjoyable, especially spending the night alongside a close friend and classmates from different teams. This camaraderie made the experience unforgettable, and once again, we clinched 2nd place.",
-      name: "Hackathon @ College of Engineering Vadakara",
-      designation: "17th Apr, 2024",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/1.jpg",
+        "(1)Auto-docking System for TurtleBot3: Implemented using ROS 2 Humble, integrating pattern recognition and TF frame transformations for precise docking. (2) Multi-sensor Auto-docking Simulations: Combined 2D LiDAR, 3D LiDAR, and a depth camera on a single TurtleBot3, simulating in the factory environment in Gazebo and RViz2 (3) Simulation and Real-world Applications: Conducted tasks entirely in ROS 2 Humble, strengthening both theoretical knowledge and practical expertise",
+      name: "Thedush Robotics",
+      designation: "1th Jun, 2024 - 31st Aug, 2024",
+      
     },
-    {
-      testimonial:
-        "I decided to enroll in a Data Science course on Udemy after realizing that web development didn't fully resonate with me. It turned out to be one of the best decisions I've ever made. From the very first day, I discovered a deep passion for the subject. The combination of mathematics, coding, and logic felt like the perfect fit for me. The course was a two-week journey that introduced me to the exciting fields of Machine Learning (ML) and Deep Learning (DL), further fueling my interest. I was particularly drawn to the practical applications of the concepts I learned. By the end of the course, I had gained a great deal of self-confidence, and my curiosity for further learning was reignited.",
-      name: "Discovering My Passion for Data Science",
-      designation: "15th Jul, 2024",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/1.jpg",
-    },
+    
   ];
   
   const projects = [
     {
-      name: "A.L.O.H.A",
+      name: "Rocky - AI Assistant",
       description:
-        "ALOHA is an AI driven personal assistant designed to help users manage their tasks, events, and categories. Leveraging Natural Language Processing (NLP) and Machine Learning (ML), ALOHA can understand user commands and perform various functions such as adding, deleting, and listing tasks or creating categories.",
+        "Rocky is a Python-based AI personal assistant designed to automate tasks and respond to user prompts. It leverages libraries like speech_recognition, pyttsx3, pyautogui, wikipedia, pywhatkit, and cv2 for speech recognition, text-to-speech, web automation, media handling, and camera operations. With features like task scheduling, real-time data retrieval, email management, and entertainment, Rocky provides a seamless and interactive user experience for daily automation.",
       tags: [
         {
-          name: "ML",
+          name: "speech_py",
           color: "blue-text-gradient",
         },
         {
-          name: "NLTK",
+          name: "pyttsx3",
           color: "green-text-gradient",
         },
         {
-          name: "Flutter",
+          name: "pyGUI",
           color: "pink-text-gradient",
         },
         {
-          name: "Flask",
+          name: "cv2",
           color: "yellow-text-gradient",
         },
       ],
       image: aloha,
-      source_code_link: "https://github.com/Apollo-Blaze/A.L.O.H.A",
+      source_code_link: "https://github.com/M-B-W/Own-AI",
     },
     {
-      name: "Ettayi Lang",
+      name: "CoVid-19--Helper-",
       description:
-        "Tired of always coding in English? Why not switch things up with Malayalam! Ettayi is a programming language that lets you write code in Manglish, a fun mix of Malayalam and English. It's a simple way to make coding exciting, especially if you want to connect with your roots. Working on Ettayi taught me a lot about parsers and interpreters.",
+        "Developed a user-friendly website to assist users during the COVID-19 pandemic. The site allows users to enter their city pin code to locate nearby vaccination centers, provides direct links to official resources like Aarogya Setu and CoWIN, lists COVID-19 prevention tips, and tracks real-time country-wise COVID-19 cases using APIs. Built using HTML, CSS, and JavaScript, this platform combines essential information and functionality to support public health efforts effectively",
       tags: [
         {
-          name: "Python",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "Lark",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "Parser",
+          name: "JS",
           color: "pink-text-gradient",
+        },
+        {
+          name: "Tracker",
+          color: "yellow-text-gradient",
         },
       ],
       image: ettayi,
-      source_code_link: "https://github.com/Apollo-Blaze/ettayi",
+      source_code_link: "https://github.com/M-B-W/CoVid-19--Helper-",
     },
     {
-      name: "Nap Buster",
+      name: "Rocky-Weather_App",
       description:
-        "Nap-Buster is the ultimate wake-up call for your computer! Nap-Buster keeps your laptop alert and active by making sure it knows when you're around by using face detection. Whether you're reading, watching, or just too lazy to move, Nap-Buster ensures your laptop stays awake, just like you! Stay focussed with Nap-Buster!!",
+        "Developed a weather application using HTML, CSS, and JavaScript, integrated with a third-party weather API for real-time updates on temperature, humidity, and more. It includes a search functionality for users to find weather information by city or location and a responsive design that ensures compatibility across various devices Featuring a user-friendly interface, search functionality, and responsive design, the project highlights skills in front-end development and API integration.",
       tags: [
         {
-          name: "Python",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "OpenCV",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "Media-Pipe",
+          name: "JS",
           color: "pink-text-gradient",
         },
         {
-          name: "OS",
+          name: "API",
           color: "yellow-text-gradient",
         },
       ],
       image: nap,
-      source_code_link: "https://github.com/Apollo-Blaze/Nap-Buster",
+      source_code_link: "https://github.com/M-B-W/CodeClauseInternship_Weather-App",
     },
     {
-      name: "Ravenswood Case",
+      name: "OA & LF Robots",
       description:
-        "This project is designed to engage users in a thrilling murder mystery investigation. Users explore locations, interact with AI-powered suspects, and ultimately solve the mystery by determining the killer. This projected is hosted and free to play.",
+        "Developed two robotics projects: an Obstacle Avoidance Robot using ultrasonic sensors to detect and navigate around obstacles autonomously, and a Line Follower Robot utilizing infrared sensors to follow a predefined path with high precision. These robots were designed and configured for practical automation applications, demonstrating expertise in sensor integration, microcontroller programming, and autonomous navigation.",
       tags: [
         {
-          name: "React",
+          name: "UNO",
           color: "blue-text-gradient",
         },
         {
-          name: "Express",
+          name: "L298 Motor Driver",
           color: "green-text-gradient",
         },
         {
-          name: "Gemini",
+          name: "Ultrasonic",
           color: "pink-text-gradient",
         },
         {
-          name: "UI",
+          name: "IR",
           color: "yellow-text-gradient",
         },
       ],
       image: study,
-      source_code_link: "https://github.com/Apollo-Blaze/Murder-Mystery/",
+      source_code_link: "",
     },
+    
     {
-      name: "Eko",
+      name: "Underwater Mini-Robot",
       description:
-        "EKO is an innovative platform designed to bridge the gap between the general public and repair technicians by facilitating the sale of unusable electronic and electrical components. This project aims to make repairs more affordable and accessible .",
+        "Designed and developed an underwater mini-robot using PVC pipes, Arduino (UNO & Nano), Motor Shield Adafruit, and propellers, programmed via Arduino IDE. Integrated a 433 MHz RF module for remote control, enabling efficient underwater navigation and operations. Successfully demonstrated precise movement and reliable functionality in a controlled underwater environment, showcasing expertise in robotics, hardware integration, and programming.",
       tags: [
         {
-          name: "React",
+          name: "Arduino",
           color: "blue-text-gradient",
         },
         {
-          name: "Express",
+          name: "RF-433 Hz",
           color: "green-text-gradient",
         },
         {
-          name: "Gemini",
+          name: "Motor shield",
           color: "pink-text-gradient",
         },
         {
-          name: "Firebase",
+          name: "PVC",
           color: "yellow-text-gradient",
         },
       ],
       image: eko,
-      source_code_link: "https://github.com/Apollo-Blaze/Ekov1",
+      source_code_link: "",
     },
     {
-      name: "Orion",
+      name: "AMR (ROS)",
       description:
-        "Orion is a collaboration app designed to streamline project management. With integrated resources, group chats, automated meeting minutes, to-do lists, and push notifications, Orion makes project coordination more efficient and fun.",
+        "Implemented an Auto-docking System for TurtleBot3 using ROS 2 Humble, integrating pattern recognition and TF frame transformations for precise docking. Combined 2D LiDAR, 3D LiDAR, and a depth camera on a single TurtleBot3 for multi-sensor auto-docking simulations in a factory environment using Gazebo and RViz2. Conducted tasks in both simulation and real-world applications, enhancing both theoretical knowledge and practical expertise in robotics.",
       tags: [
         {
-          name: "Flutter",
+          name: "ROS2",
           color: "blue-text-gradient",
         },
         {
-          name: "BERT",
+          name: "Python",
           color: "green-text-gradient",
         },
         {
-          name: "Firebase",
+          name: "C++",
           color: "pink-text-gradient",
         },
         {
-          name: "UI",
+          name: "Ubuntu-22.04",
           color: "yellow-text-gradient",
         },
       ],
       image: quotify,
-      source_code_link: "https://github.com/Apollo-Blaze/Orion",
+      source_code_link: "",
     },
   ];
   

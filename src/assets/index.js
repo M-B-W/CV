@@ -25,12 +25,13 @@ import nmcs from "./company/nmcs.png";
 import ds from "./company/ds.png";
 import yasmin from "./company/yasmin.png";
 import gec from "./company/fec.png";
-import study from "./study.jpg"
+import study from "./study.png"
 import eko from './eko.png'
 import aloha from './aloha.png'
 import quotify from './quotify.png'
 import ps from './tech/Adobe Photoshop.png'
 import c from './tech/C.png'
+import ros from './tech/ros.png'
 import cplus from './tech/C++ (CPlusPlus).png'
 import dart from './tech/Dart.png'
 import express from './tech/Express.png'
@@ -50,6 +51,19 @@ import scikitlearn from './tech/scikit-learn.png'
 import sqlite from './tech/SQLite.png'
 import tf from './tech/TensorFlow.png'
 import opencv from './tech/opencv.png'
+import arduino from './tech/arduino.png'
+import plc from './tech/plc.png'
+import robodk from './tech/robodk.png'
+import motosim from './tech/motosim.png'
+import fusion from './tech/fusion.png'
+import sw from './tech/sw.png'
+import as from './tech/as.png'
+import vite from './tech/vite.png'
+import matlab from './tech/matlab.png'
+import thinkercad from './tech/thinkercad.png'
+import autocad from './tech/autocad.png'
+import blender from './tech/blender.png'
+import emailjs from './tech/emailjs.png'
 
 export {
   opencv,
@@ -71,6 +85,7 @@ export {
   express,
   dart,
   cplus,
+  ros,
   c,
   ps,
   logo,
@@ -104,4 +119,18 @@ export {
   gec,
   yasmin,
   study,
+  arduino,
+  plc,
+  robodk,
+  motosim,
+  fusion,
+  sw,
+  as,
+  vite,
+  matlab,
+  thinkercad,
+  autocad,
+  blender,
+  emailjs,
+  
 };

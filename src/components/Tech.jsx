@@ -23,8 +23,8 @@ const Tech = () => {
     <div ref={ref} className={`w-full flex flex-col items-center bg-black-100  rounded-3xl shadow-lg overflow-hidden `}>
       <div className={`bg-tertiary ${styles.paddingt} w-full min-h-[50px] flex flex-col items-center`}>
         <motion.div variants={textVariant(0)} initial="hidden" animate={isInView ? "show" : "hidden"}>
-          <p className={styles.sectionSubText}>My Arsenal</p>
-          <h2 className={styles.sectionHeadText}>Stack.</h2>
+          <p className={styles.sectionSubText}>My Skill Arsenal</p>
+          <h2 className={styles.sectionHeadText}>Capability Stack's</h2>
         </motion.div>
       </div>
       <motion.div

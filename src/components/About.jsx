@@ -39,7 +39,7 @@ const About = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = '/resume.pdf';
-    link.download = 'Srichand_Suresh_Resume.pdf';
+    link.download = 'Bharathwaj_Resume.pdf';
     link.click();
   };
 
@@ -53,22 +53,35 @@ const About = () => {
       <div className='mt-4 flex flex-col lg:flex-row items-start lg:items-center gap-4'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className="text-blue-400 text-[17px] max-w-3xl leading-[30px]"
         >
-          Hi, I'm <span className="text-white-100">Srichand Suresh</span>, a developer with a <span className="text-white-100">curious mind </span> and <span className="text-white-100">a philosophical soul. </span>
-          I'm fascinated by how things work. Whether it's code, the way people interact with technology, 
-          or the deeper questions about <span className="text-white-100">life and its meaning</span>. I tend to overthink life's simplest questions 
-          and often find myself debating abstract ideas with <span className="text-white-100">no right answers</span>.
-          When I'm not lost in thought, you'll probably find me tinkering with side projects,
-          exploring new tools, or adding <span className="text-white-100">"just one more feature"</span> to something that was perfectly fine (until it wasn't).
-          Whether it's technology or philosophy, I'm always looking to explore what makes the world tick and find ways to make it a little better.
+          As a <span className="text-white-100">Robotics and Automation Engineer</span> and a
+          <span className="text-white-100"> passionate developer </span> with a curious mind, I specialize in developing
+          <span className="text-white-100"> efficient systems </span> utilizing
+          <span className="text-white-100"> ROS programming, Python, C, C++, Java, TypeScript,</span> and
+          <span className="text-white-100"> JavaScript </span>. My expertise extends to
+          <span className="text-white-100"> web development </span>  with frameworks and libraries such as
+          <span className="text-white-100"> React.js, Node.js, Vite.js,</span> and <span className="text-white-100"> Tailwind CSS </span>,
+          alongside hands-on experience in frontend development.
+
+          I’ve worked on numerous projects, exploring innovative tools and implementing scalable solutions that bridge
+          <span className="text-white-100"> technology </span> and <span className="text-white-100" >user needs </span>. Additionally, I have experience with
+          <span className="text-white-100"> MATLAB, Arduino IDE programming, </span> and various simulation tools like
+          <span className="text-white-100"> Fusion 360 </span> and <span className="text-white-100"> RoboDK </span>, enabling me to design and simulate complex systems effectively.
+
+          My approach combines <span className="text-white-100">technical proficiency</span> with a deep understanding of
+          <span className="text-white-100"> problem-solving </span>, making me adept at enhancing productivity, ensuring safety, and driving innovation.
+
+          Let’s collaborate and bring impactful ideas to life!
         </motion.p>
 
-        <motion.button 
+
+
+        <motion.button
           variants={fadeIn("", "", 0.1, 1)}
           whileHover={{ scale: 1.05, transition: { duration: 0 } }}
-          onClick={downloadResume} 
-          className='bg-tertiary hover:text-secondary text-white font-bold py-4 px-6 rounded-sm mt-4 lg:mt-0 lg:ml-32 transition duration-300 text-md whitespace-nowrap'
+          onClick={downloadResume}
+          className='bg-tertiary hover:text-blue-500 text-white font-bold py-4 px-6 rounded-sm mt-4 lg:mt-0 lg:ml-32 transition duration-300 text-md whitespace-nowrap'
         >
           Get Resume
         </motion.button>

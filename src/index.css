@@ -263,7 +263,7 @@
 
 .slick-prev:before, .slick-next:before {
   font-size: 48px;
-  color: red; /* Set arrow color to red */
+  color: rgb(27, 117, 220); /* Set arrow color to red */
 }
 
 /* Move the slick-next button left by 5px only on desktop */
@@ -296,7 +296,7 @@
 
 .slick-dots li button:before {
   font-size: 12px; /* Adjust the size of the dots */
-  color: red; /* Change the color of the dots */
+  color: blue; /* Change the color of the dots */
   opacity: 1; /* Ensure the dots are fully visible */
 }
 

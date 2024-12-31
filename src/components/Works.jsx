@@ -56,7 +56,7 @@ const ProjectCard = memo(({
         </div>
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <p className='mt-2 text-blue-400 text-[14px]'>{description}</p>
         </div>
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
@@ -95,9 +95,9 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={isMobile?{}:fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-blue-400 text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          The following projects showcase my skills and experience through real-world applications in both software development and robotics. Each project is briefly described, with links to the corresponding code repositories. These projects reflect my ability to solve complex problems, work with diverse technologies, and manage projects effectively, whether in software or robotics-based solutions.
         </motion.p>
       </div>
 

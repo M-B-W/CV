@@ -91,7 +91,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Apollo Blaze &nbsp;
+            Portfolio &nbsp;
             <span className="sm:block hidden"></span>
           </p>
         </Link>
@@ -102,11 +102,11 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === "home"
-                  ? "text-secondary"
+                  ? "text-white-100"
                   : active === nav.id
-                  ? "text-white"
-                  : "text-secondary"
-              } hover:text-white text-[18px] font-bold cursor-pointer transition-colors duration-300`}
+                  ? "text-blue-700"
+                  : "text-white-100"
+              } hover:text-blue-700 text-[18px] font-bold cursor-pointer transition-colors duration-300`}
               onClick={() => setActive(nav.id)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -133,10 +133,10 @@ const Navbar = () => {
                   key={nav.id}
                   className={`transition-opacity duration-300 ease-in-out font-poppins font-medium cursor-pointer text-[20px] ${
                     active === "home"
-                      ? "text-secondary"
+                      ? "text-blue-700"
                       : active === nav.id
                       ? "text-white"
-                      : "text-secondary"
+                      : "text-blue-700"
                   } text-center transition-colors duration-300 hover:text-white`}
                   onClick={() => {
                     setToggle(false);

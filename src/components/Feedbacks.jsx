@@ -24,7 +24,7 @@ const FeedbackCard = ({
     <div className='mt-7 flex justify-between items-center gap-1'>
       <div className='flex-1 flex flex-col'>
         <p className='text-white font-medium text-[18px] text-right'>{name}</p>
-        <p className='mt-1 text-secondary text-[16px] text-right'>
+        <p className='mt-1 text-blue-800 text-[16px] text-right'>
           {designation}
         </p>
       </div>
@@ -68,8 +68,8 @@ const Feedbacks = () => {
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>In my shoes</p>
-          <h2 className={styles.sectionHeadText}>Journal.</h2>
+          <p className={styles.sectionSubText}>In my position</p>
+          <h2 className={styles.sectionHeadText}>Internships.</h2>
         </motion.div>
       </div>
       {/* Carousel showing one card per page */}
